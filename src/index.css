@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2.7%;
+    --foreground: 50 33% 96.5%;
+    --card: 0 0% 5%;
+    --card-foreground: 50 33% 96.5%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 50 33% 96.5%;
+    --primary: 39 49% 56%;
+    --primary-foreground: 0 0% 2.7%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 50 33% 96.5%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 39 49% 56%;
+    --accent-foreground: 0 0% 2.7%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 50 33% 96.5%;
+    --border: 0 0% 16.5%;
+    --input: 0 0% 16.5%;
+    --ring: 39 49% 56%;
+    --chart-1: 39 49% 56%;
+    --chart-2: 50 33% 96.5%;
+    --chart-3: 0 0% 16.5%;
+    --chart-4: 40 10% 65%;
+    --chart-5: 39 49% 40%;
+    --radius: 0px;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-display: 'Cormorant Garamond', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --sidebar-background: 0 0% 2.7%;
+    --sidebar-foreground: 50 33% 96.5%;
+    --sidebar-primary: 39 49% 56%;
+    --sidebar-primary-foreground: 0 0% 2.7%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 50 33% 96.5%;
+    --sidebar-border: 0 0% 16.5%;
+    --sidebar-ring: 39 49% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(0 0% 20%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
+
+@layer utilities {
+  .font-heading { font-family: 'Cormorant Garamond', serif; }
+  .font-body { font-family: 'Inter', sans-serif; }
+  .font-mono-tech { font-family: 'JetBrains Mono', monospace; }
+
+  .text-gold { color: hsl(39 49% 56%); }
+  .bg-gold { background-color: hsl(39 49% 56%); }
+  .border-gold { border-color: hsl(39 49% 56%); }
+  .text-ivory { color: hsl(50 33% 96.5%); }
+  .bg-obsidian { background-color: hsl(0 0% 2.7%); }
+
+  .tracking-luxe { letter-spacing: 0.2em; }
+  .tracking-wide-luxe { letter-spacing: 0.15em; }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, hsl(39 49% 56%), hsl(45 55% 70%), hsl(35 45% 45%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-border-gradient {
+    border-image: linear-gradient(135deg, hsl(39 49% 56%), hsl(45 55% 70%), hsl(35 45% 45%)) 1;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+  }
+
+  .hover-reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .group:hover .hover-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .img-zoom {
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .group:hover .img-zoom {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes staggered-rise {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scroll-hint {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 hsla(39, 49%, 56%, 0.3); }
+  50% { box-shadow: 0 0 0 8px hsla(39, 49%, 56%, 0); }
+}
+
+.animate-staggered { animation: staggered-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.animate-fade-in { animation: fade-in 1s ease forwards; }
+.animate-scroll-hint { animation: scroll-hint 2s ease-in-out infinite; }
+.animate-pulse-gold { animation: pulse-gold 2s infinite; }
+
+.shimmer-text {
+  background: linear-gradient(90deg, hsl(40 10% 65%) 0%, hsl(39 49% 56%) 50%, hsl(40 10% 65%) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
