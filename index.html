@@ -1,0 +1,24 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://db.com/logo_v2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="description" content="AUBS Jewellery — L'art du luxe. Grillz sur mesure, chaînes, bagues, bracelets et pendentifs en or, diamant et pierres précieuses. Savoir-faire artisanal d'exception." />
+    <meta name="keywords" content="grillz sur mesure, bijoux de luxe, or, diamant, joaillerie, AUBS, grillz personnalisé, chaînes or, bagues diamant" />
+    <meta property="og:title" content="AUBS Jewellery — L'Art du Luxe" />
+    <meta property="og:description" content="Des bijoux d'exception. Un savoir-faire unique. Conçus pour ceux qui ne suivent pas les tendances, mais qui les définissent." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+    <title>AUBS Jewellery — L'Art du Luxe</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
