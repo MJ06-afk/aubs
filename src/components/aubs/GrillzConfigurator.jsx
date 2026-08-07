@@ -54,7 +54,7 @@ export default function GrillzConfigurator() {
           <div className="relative lg:sticky lg:top-24">
             <div className="relative aspect-square overflow-hidden bg-card border border-border">
               <Image
-                src="https://media.db.com/images/public/6a726debefb664a4af6524e2/cfa490d23_generated_bf4e4832.png"
+                src="https://media.base44.com/images/public/6a726debefb664a4af6524e2/cfa490d23_generated_bf4e4832.png"
                 alt="Configurateur de grillz AUBS"
                 fittingType="fill"
                 className="absolute inset-0 w-full h-full object-cover"

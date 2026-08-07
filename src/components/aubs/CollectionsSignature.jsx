@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
 const collections = [
-  { name: 'Chaînes', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/193367a85_generated_5511d36c.png', desc: 'Maillons d\'exception' },
-  { name: 'Bagues', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/eca0c50cc_generated_2caa8d7b.png', desc: 'Pavé & solitaires' },
-  { name: 'Bracelets', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/8d8dab01e_generated_4b27f740.png', desc: 'Joncs & gourmettes' },
-  { name: 'Pendentifs', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/8210d1095_generated_360323e2.png', desc: 'Symboles & créations' },
-  { name: 'Grillz', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png', desc: 'Sur mesure' },
+  { name: 'Chaînes', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/193367a85_generated_5511d36c.png', desc: 'Maillons d\'exception' },
+  { name: 'Bagues', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/eca0c50cc_generated_2caa8d7b.png', desc: 'Pavé & solitaires' },
+  { name: 'Bracelets', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/8d8dab01e_generated_4b27f740.png', desc: 'Joncs & gourmettes' },
+  { name: 'Pendentifs', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/8210d1095_generated_360323e2.png', desc: 'Symboles & créations' },
+  { name: 'Grillz', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png', desc: 'Sur mesure' },
 ];
 
 export default function CollectionsSignature() {

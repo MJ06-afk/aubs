@@ -29,7 +29,7 @@ export default function Atelier() {
             </p>
           </div>
           <div className="relative aspect-[3/2] overflow-hidden">
-            <video src="https://media.db.com/videos/public/6a726debefb664a4af6524e2/ff69d3b3f_anime_moi_cette_vido_La_pers.mp4" autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" />
+            <video src="https://media.base44.com/videos/public/6a726debefb664a4af6524e2/ff69d3b3f_anime_moi_cette_vido_La_pers.mp4" autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 to-transparent" />
           </div>
         </div>

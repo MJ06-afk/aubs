@@ -6,14 +6,14 @@ import { Image } from '@/components/ui/image';
 
 const slides = [
   {
-    image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/1486a573c_generated_84da0cda.png',
+    image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/1486a573c_generated_84da0cda.png',
     overline: 'Bienvenue chez AUBS',
     title: "L'Art du Luxe.",
     titleLine2: 'Le Pouvoir du Détail.',
     body: "Des bijoux d'exception. Un savoir-faire unique. Conçus pour ceux qui ne suivent pas les tendances, mais qui les définissent.",
   },
   {
-    image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png',
+    image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png',
     overline: 'Grillz sur mesure',
     title: 'Façonné pour vous.',
     titleLine2: 'Aucun compromis.',

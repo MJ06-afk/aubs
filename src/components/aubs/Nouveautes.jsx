@@ -5,10 +5,10 @@ import { ArrowRight } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
 const products = [
-  { name: 'Grillz Open Face — Or jaune', cat: 'Grillz', price: '4 200 €', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png', tag: 'Nouveau' },
-  { name: 'Chaîne Cuban — Or 18k', cat: 'Chaînes', price: '6 800 €', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/193367a85_generated_5511d36c.png', tag: 'Iconique' },
-  { name: 'Bague Solitaire — Diamant', cat: 'Bagues', price: '3 500 €', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/eca0c50cc_generated_2caa8d7b.png', tag: 'Nouveau' },
-  { name: 'Bracelet Jonc — Pavé', cat: 'Bracelets', price: '5 200 €', image: 'https://media.db.com/images/public/6a726debefb664a4af6524e2/8d8dab01e_generated_4b27f740.png', tag: 'Édition limitée' },
+  { name: 'Grillz Open Face — Or jaune', cat: 'Grillz', price: '4 200 €', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/3fd518a2e_generated_50abdb06.png', tag: 'Nouveau' },
+  { name: 'Chaîne Cuban — Or 18k', cat: 'Chaînes', price: '6 800 €', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/193367a85_generated_5511d36c.png', tag: 'Iconique' },
+  { name: 'Bague Solitaire — Diamant', cat: 'Bagues', price: '3 500 €', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/eca0c50cc_generated_2caa8d7b.png', tag: 'Nouveau' },
+  { name: 'Bracelet Jonc — Pavé', cat: 'Bracelets', price: '5 200 €', image: 'https://media.base44.com/images/public/6a726debefb664a4af6524e2/8d8dab01e_generated_4b27f740.png', tag: 'Édition limitée' },
 ];
 
 export default function Nouveautes() {
