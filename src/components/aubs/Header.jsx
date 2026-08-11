@@ -12,7 +12,6 @@ const navLinksLeft = [
 
 const navLinksRight = [
 { label: 'Atelier', href: '#atelier' },
-{ label: 'Personnalisation', href: '#configurator' },
 { label: 'Journal', href: '#faq' }];
 
 export default function Header() {
