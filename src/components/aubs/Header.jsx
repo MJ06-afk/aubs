@@ -6,7 +6,7 @@ const topBarLinks = [
 
 const navLinksLeft = [
 { label: 'Collections', href: '#collections' },
-{ label: 'Grillz sur mesure', href: '#configurator' },
+{ label: 'Grillz sur mesure', href: '/grillz-sur-mesure' },
 { label: 'Nouveautés', href: '#nouveautes' },
 { label: 'À propos', href: '#atelier' }];
 
